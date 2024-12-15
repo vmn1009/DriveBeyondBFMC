@@ -1,22 +1,22 @@
-Team: DriveBeyond 
-Date: 16/12/2024  
+Team: DriveBeyond  
+Date: 16/12/2024  D
 Description: This is a report article about project status 1 
 
 # 📋 Table of Contents
 
-🚗 [Task 1: Path Planning](#task-1-path-planning)  
+🚗 [Task 1: Path Planning](#task-1:-path-planning)  
    - Algorithm to determine the optimal route from start to goal.  
 
-📍 [Task 2: Display Current Coordinates](#task-2-display-current-coordinates)  
+📍 [Task 2: Display Current Coordinates](#task-2:-display-current-coordinates)  
    - Display the vehicle's real-time location in space.  
 
-🛠️ [Task 3: Control Vehicle Along Planned Path](#task-3-control-vehicle-along-planned-path)  
+🛠️ [Task 3: Control Vehicle Along Planned Path](#task-3:-control-vehicle-along-planned-path)  
    - Guide the vehicle to follow the pre-determined route.  
 
-🛣️ [Task 4: Lane Following Control](#task-4-lane-following-control)  
+🛣️ [Task 4: Lane Following Control](#task-4:-lane-following-control)  
    - Ensure the vehicle remains stable within its lane.  
 
-🌐 [Task 5: Display Vehicle Status on Website](#task-5-display-vehicle-status-on-website)  
+🌐 [Task 5: Display Vehicle Status on Website](#task-5:-display-vehicle-status-on-website)  
    - Web interface showing real-time vehicle status and data.  
 
 
@@ -38,33 +38,28 @@ Description: This is a report article about project status 1
     Display Vehicle Position Coordinates with Kalman Filter Noise Reduction
 ### Steps
 **Create Nodes on Map**  
-   - **File**: `route_network_create.py`  
-   - **Functionality**: Generate nodes representing points on the map.
-**Save Nodes**  
-   - **File**: `route_point.sav`  
-   - **Functionality**: Stores created nodes for further processing.
+   - File: `route_network_create.py`
+   - Functionality: Generate nodes representing points on the map.  
+**Save Nodes**   
+   - **File**: `route_point.sav`
+   - **Functionality**: Stores created nodes for further processing.  
 **Connect Nodes with Edges**  
-   - **File**: `route_create.py`  
+   - **File**: `route_create.py`
    - **Functionality**: Define edges that connect the nodes, forming possible paths.
 **Save Node Edges**  
-   - **File**: `route_point.sav`  
+   - **File**: `route_point.sav`
    - **Functionality**: Updates the file with the connected edges.
 **Shortest Path Calculation**  
-   - **File**: `path_laning.py`  
+   - **File**: `path_laning.py`
    - **Functionality**: Use Dijkstra's and A* algorithms to calculate the shortest path.
 
 
 # 📍 Task 2: Display Current Coordinates
 ## 📂 Project Directory Structure
 ~/catkin_ws/ 
-├── src/ │  
-|        └── example/ │ 
-|                     ├── project_1/ │
-|                                    │ 
-|                                    └── task_2/  │ 
-|                                                 ├── route_network_create.py
-|                                                 │ 
-|                                                 └── route_create.py
+catkin_ws/src/example/scripts/task_2
+├── localization_kalman_filter.py
+└── localization.py
 
 ![Task Image 2](images/task_image_2.png)
 ##📝 Description
