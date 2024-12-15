@@ -1,0 +1,2 @@
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/eric/catkin_ws/src/models_pkg
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/eric/catkin_ws/src
