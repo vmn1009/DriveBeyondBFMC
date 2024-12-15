@@ -4,21 +4,21 @@ Description: This is a report article about project status 1
 
 # 📋 Table of Contents
 
-🚗 [Task 1 Path Planning](#task-1-path-planning)  
+* [Task 1 Path Planning](#task-1-path-planning)  
 
-📍 [Task 2 Display Current Coordinates](#task-2-display-current-coordinates)  
+* [Task 2 Display Current Coordinates](#task-2-display-current-coordinates)  
 
-🛠️ [Task 3 Control Vehicle Along Planned Path](#task-3-control-vehicle-along-planned-path)  
+* [Task 3 Control Vehicle Along Planned Path](#task-3-control-vehicle-along-planned-path)  
 
-🛣️ [Task 4 Lane Following Control](#task-4-lane-following-control)  
+* [Task 4 Lane Following Control](#task-4-lane-following-control)  
 
-🌐 [Task 5 Display Vehicle Status on Website](#task-5-display-vehicle-status-on-website)  
+* [Task 5 Display Vehicle Status on Website](#task-5-display-vehicle-status-on-website)  
 
 
-# 🚗 Task 1 Path Planning
+# Task 1 Path Planning 
 ## 📂 Project Directory Structure
 ```bash
-~/catkin_ws/ 
+~/DriveBeyondBFMC/ 
 ├── src/ │  
 |        └── example/ │ 
 |                     ├── project_1/ │
@@ -51,12 +51,13 @@ Description: This is a report article about project status 1
 **Shortest Path Calculation**  
    - File: `path_laning.py`
    -Functionality: Use Dijkstra's and A* algorithms to calculate the shortest path.  
+
 ![Task Image 1](images/task_image_2.png)
 
-# 📍 Task 2 Display Current Coordinates
+# Task 2 Display Current Coordinates
 ## 📂 Project Directory Structure
 ```bash
-~/catkin_ws/ 
+~/DriveBeyondBFMC/ 
 catkin_ws/src/example/scripts/task_2
 ├── localization_kalman_filter.py
 └── localization.py
@@ -72,10 +73,11 @@ catkin_ws/src/example/scripts/task_2
 **Apply Kalman Filter for Noise Reduction**  
    - File: `localization_kalman_filter.py`  
    - Functionality: Apply the Kalman Filter algorithm to reduce noise from the vehicle's position data, improving accuracy.  
+
 ![Task Image 2](images/task_image_2.png) 
 
 
-# 🛠️ Task 3 Control Vehicle Along Planned Path
+# Task 3 Control Vehicle Along Planned Path
 ## 📂 Project Directory Structure
 ```bash
 ~/catkin_ws/ 
@@ -103,15 +105,16 @@ catkin_ws/src/example/scripts/task_2
 **Control Vehicle to Follow Nodes and Edges**  
    - File: `control_follow_node.py`  
    - Functionality: Control the vehicle to move along the calculated shortest path by following the nodes and edges stored in `coordinates.txt`, while also continuously displaying the vehicle’s position.  
+
 ![Task Image 3](images/task_image_3.png)
 
 
 
 
-# 🛣️ Task 4 Lane Following Control
+# Task 4 Lane Following Control
 ## 📂 Project Directory Structure
 ```bash
-~/catkin_ws/ 
+~/DriveBeyondBFMC/ 
 ├── src/ │  
 |        └── example/ │ 
 |                     ├── project_1/ │
@@ -137,14 +140,15 @@ catkin_ws/src/example/scripts/task_2
 **Control Vehicle to Follow Nodes and Edges**  
    - File: `control_follow_node.py`  
    - Functionality: Control the vehicle to move along the calculated shortest path by following the nodes and edges stored in `coordinates.txt`, while also continuously displaying the vehicle’s position.  
+
 ![Task Image 4](images/task_image_3.png)
 
 
-# 🌐 Task 5 Display Vehicle Status on Website
+# Task 5 Display Vehicle Status on Website
 ## 📂 Project Directory Structure
 
 ```bash
-~/catkin_ws/ 
+~/DriveBeyondBFMC/ 
 ├── src/ │  
 |        └── example/ │ 
 |                     ├── project_1/ │
@@ -157,7 +161,8 @@ Build a Web Interface Using ReactJS and Material UI to Display Vehicle Data
 
 **Web Interface Development**  
    - Source Code: `web_interface`  
-   - Functionality: Use ReactJS and Material UI to create a web interface that fetches and displays data from ROS nodes: `/automobile/localization` (vehicle position), `/automobile/rcCar/camera_follow/image_raw` (camera video stream), and `/automobile/command` (vehicle speed). Display the current position coordinates, live camera feed, and speed on the website.
+   - Functionality: Use ReactJS and Material UI to create a web interface that fetches and displays data from ROS nodes: `/automobile/localization` (vehicle position), `/automobile/rcCar/camera_follow/image_raw` (camera video stream), and `/automobile/command` (vehicle speed). Display the current position coordinates, live camera feed, and speed on the website.  
+
 ![Task Image 5](images/task_image_5.png)
 
 
