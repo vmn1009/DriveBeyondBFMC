@@ -6,13 +6,9 @@ Description: This is a report article for project status 1
 # 📋 Table of Contents
 
 * [Task 1 Path Planning](#task-1-path-planning)  
-
 * [Task 2 Display Current Coordinates](#task-2-display-current-coordinates)  
-
 * [Task 3 Control Vehicle Along Planned Path](#task-3-control-vehicle-along-planned-path)  
-
 * [Task 4 Lane Following Control](#task-4-lane-following-control)  
-
 * [Task 5 Display Vehicle Status on Website](#task-5-display-vehicle-status-on-website)  
 
 
@@ -21,13 +17,12 @@ Description: This is a report article for project status 1
 ```bash
 ~/project-status-1/ 
 /src/example/project_1/task_1
-├── graph_interactive.html
 ├── NodeNetwork.py
 ├── road_network.sav
 ├── route_create.py
 ├── route_network_create.py
-├── route_point.sav
 ├── route_points.sav
+├── path_planning_create.py
 └── Track2025_2.png
 ```
 
@@ -47,11 +42,11 @@ Description: This is a report article for project status 1
    - Functionality: Define edges that connect the nodes, forming possible paths.  
    
 **Save Node Edges**  
-   - File: `route_point.sav`
-   - Functionality: Updates the file with the connected edges.  
+   - **File**: `road_network.sav`  
+   - **Functionality**: Saves the connections (edges) between nodes in the map.
 
 **Shortest Path Calculation**  
-   - File: `path_laning.py`
+   - File: `path_planning_create.py`
    - Functionality: Use Dijkstra's and A* algorithms to calculate the shortest path.  
 
 ![Task Image 1](images/task_image_1.png)
@@ -65,7 +60,7 @@ Description: This is a report article for project status 1
 └── localization_with_kalman_filter.py
 ```
 ## 📝 Description
-    Path planning involves creating a network of nodes and edges on a map and calculating the shortest route between two points. This task utilizes pre-defined scripts and algorithms to achieve efficient and accurate routing.
+Path planning involves creating a network of nodes and edges on a map and calculating the shortest route between two points. This task utilizes pre-defined scripts and algorithms to achieve efficient and accurate routing.
 
 **Register and Listen to Node /automobile/localization**  
    - File: `localization.py`  
@@ -88,7 +83,7 @@ Description: This is a report article for project status 1
 └── path_planning.py
 ```
 ## 📝 Description
-    Combine Task 1 and Task 2 to Choose Start and End Points, Calculate Shortest Path, Display Vehicle Position, and Control Vehicle Movement
+Combine Task 1 and Task 2 to Choose Start and End Points, Calculate Shortest Path, Display Vehicle Position, and Control Vehicle Movement
 
 **Combine Task 1 and Task 2**  
    - File: `path_planning.py`  
@@ -114,7 +109,7 @@ Description: This is a report article for project status 1
 ```
 
 ## 📝 Description
-    Combine Task 1 and Task 2 to Choose Start and End Points, Calculate Shortest Path, Display Vehicle Position, and Control Vehicle Movement
+Image Reception and movement control
 
 **Image Reception and movement control**  
    - File: experimentalControl.py  
@@ -124,7 +119,7 @@ Description: This is a report article for project status 1
    - File: experimentalDetector.py  
    - Functionality: Perform line segmentation on the image to identify center of the lane and calculate the required steering angle for lane keeping
 
-![Task Image 4](images/task_image_3.png)
+![Task Image 4](images/task_image_4.png)
 
 
 # Task 5 Display Vehicle Status on Website
@@ -132,14 +127,14 @@ Description: This is a report article for project status 1
 
 ```bash
 ~/project-status-1/ 
-/src/example/project_1/task_5ls
+/src/example/project_1/task_5
 └── web_interface
 ```
 ## 📝 Description
-Build a Web Interface Using ReactJS and Material UI to Display Vehicle Data
+Build a Web Interface Using ReactJS and Material UI to display vehicle data
 
 **Web Interface Development**  
-   - Source Code: web_interface  
+   - Source Code: `web_interface` 
    - Functionality: Use ReactJS and Material UI to create a web interface that fetches and displays data from ROS nodes: `/automobile/localization` (vehicle position), `/automobile/rcCar/camera_follow/image_raw` (camera video stream), and `/automobile/command` (vehicle speed). Display the current position coordinates, live camera feed, and speed on the website.  
 
 ![Task Image 5](images/task_image_5.png)
