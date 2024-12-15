@@ -1,7 +1,7 @@
 # Information
 Team: DriveBeyond  
 Date: 16/12/2024  
-Description: This is a report article for project status 1 
+Description: This is a report article on the status of project 1.
 
 # 📋 Table of Contents
 
